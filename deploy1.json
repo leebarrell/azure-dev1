@@ -40,7 +40,7 @@
             }
         },
         "vnetNewOrExisting": {
-            "defaultValue": "existing",
+            "defaultValue": "new",
             "allowedValues": [
                 "new",
                 "existing"
@@ -51,77 +51,77 @@
             }
         },
         "virtualNetworkName": {
-            "defaultValue": "vnet-hcc-hub-uks-prod-01",
+            "defaultValue": "lb-vnet-poc-hub-uks-dev",
             "type": "String",
             "metadata": {
                 "description": "Name of the Virtual Network (VNET)"
             }
         },
         "virtualNetworkAddressPrefix": {
-            "defaultValue": "10.162.0.0/21",
+            "defaultValue": "172.20.0.0/22",
             "type": "String",
             "metadata": {
                 "description": "Virtual network address CIDR"
             }
         },
         "virtualNetworkResourceGroup": {
-            "defaultValue": "rg-vnet-hcc-hub-uks-prod",
+            "defaultValue": "lbarrell-poc-uks-hub",
             "type": "String",
             "metadata": {
                 "description": "Resource Group VNETs are deployed"
             }
         },
         "managementSubnetName": {
-            "defaultValue": "snet-mgmt-hcc-hub-uks-prod-01",
+            "defaultValue": "snet-mgmt-poc-hub-uks-dev-01",
             "type": "String",
             "metadata": {
                 "description": "Name of the Management Subnet"
             }
         },
         "managementSubnetAddressPrefix": {
-            "defaultValue": "10.162.1.0/24",
+            "defaultValue": "172.20.0.0/24",
             "type": "String",
             "metadata": {
                 "description": "Management Subnet address CIDR"
             }
         },
         "untrustSubnetName": {
-            "defaultValue": "snet-untrust-hcc-hub-uks-prod-01",
+            "defaultValue": "snet-untrust-poc-hub-uks-dev-01",
             "type": "String",
             "metadata": {
                 "description": "Name of the Untrust Subnet"
             }
         },
         "untrustSubnetAddressPrefix": {
-            "defaultValue": "10.162.3.0/24",
+            "defaultValue": "172.20.1.0/24",
             "type": "String",
             "metadata": {
                 "description": "Untrust Subnet address CIDR"
             }
         },
         "trustSubnetName": {
-            "defaultValue": "snet-trust-hcc-hub-uks-prod-01",
+            "defaultValue": "snet-trust-poc-hub-uks-dev-01",
             "type": "String",
             "metadata": {
                 "description": "Name of the Trust Subnet"
             }
         },
         "trustSubnetAddressPrefix": {
-            "defaultValue": "10.162.2.0/24",
+            "defaultValue": "172.20.2.0/24",
             "type": "String",
             "metadata": {
                 "description": "Trust Subnet address CIDR"
             }
         },
         "egressLBFrontEndAddress": {
-            "defaultValue": "10.162.2.100",
+            "defaultValue": "172.20.2.100",
             "type": "String",
             "metadata": {
                 "description": "IP Address of the inbound load balancer in the Trust network"
             }
         },
         "Username": {
-            "defaultValue": "",
+            "defaultValue": "panadmin",
             "type": "String"
         },
         "Password": {
