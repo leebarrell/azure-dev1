@@ -1,1 +1,4 @@
-asdfd
+This deployment assumes you will use a Panorama instance in a different RG to manage the 2 NGFWs.
+Make sure to Licence both firewalls (Set public IP for management and set base configuration for APPS and Content download). 
+
+More to come.....
